@@ -7,7 +7,7 @@ public class Employee {
 	private int id;
 	private String full_name;
 	private String Email;
-	private String Department;
+	private int Department;
 	private String Location;
 	// constructor
 
@@ -17,13 +17,13 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(int id, String full_name, String email, String department, String location) {
+	public Employee(int id, String full_name, String email, int department, String location) {
 		super();
 		this.id = id;
 		this.full_name = full_name;
-		Email = email;
-		Department = department;
-		Location = location;
+		this.Email = email;
+		this.Department = department;
+		this.Location = location;
 	}
 
 	public int getId() {
@@ -50,11 +50,11 @@ public class Employee {
 		Email = email;
 	}
 
-	public String getDepartment() {
+	public int getDepartment() {
 		return Department;
 	}
 
-	public void setDepartment(String department) {
+	public void setDepartment(int department) {
 		Department = department;
 	}
 

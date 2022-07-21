@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionUtil {
-	public static Connection getNewConnection() throws SQLException {
-
+	public static  Connection getNewConnection() throws SQLException{
+		
 		return DriverManager.getConnection(
-				System.getenv("db_url"),
-				System.getenv("db_username"),
-				System.getenv("db_password"));
-	}
-}
+		System.getenv("db_url"),
+		System.getenv("db_username"),
+		System.getenv("db_password")
+		);
+}}
